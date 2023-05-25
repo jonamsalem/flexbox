@@ -1,0 +1,53 @@
+/* flexbox is a module dividing out wireframe
+divides wirefram into parent and child containers
+uses custom properties and values
+uses pattern of parent controlling children */
+
+
+
+*{margin: 0;
+padding: 0;}
+
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;}
+
+
+.parent-container{ background-color: #6a89cc;
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: space-between;
+padding-left: 1em;
+padding-right: 1em;}
+/* Display enables flex container powers is */
+/* Flex direction defines main and cross axis */
+/* Flex wrap enables break into next line when resizing */
+/* justify content aligns along the main axis */
+
+
+.nav-link{color: white;
+    text-decoration:none ;
+    }
+
+.nav-link:nth-child(1) {color: red;
+align-self: flex-end;}
+
+/* nth child allows acess to element through its node position 
+order modifies the default order of elements
+align self crosses axis alignment of individual children */
+
+
+.menu-item{display:flex;
+align-items:center;
+justify-content: center;
+gap: 1em;}
+
+/* align items align along the cross axis
+gap controls the space between children */
+
+
+#logo {width: 3em;
+padding-left: 2em;
+padding-right: 3em;
+} 
